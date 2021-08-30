@@ -1,0 +1,5 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">库仑能网</string>
+    <string name="refundReason">退款理由： %1$s</string>
+    <string name="title_activity_system_setting_compose">SystemSettingComposeActivity</string>
+</resources>

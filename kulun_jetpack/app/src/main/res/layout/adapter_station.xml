@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/white_back"
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/re"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:text="西斗门"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/l1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_name"
+                        android:layout_marginTop="13dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_sign"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/green"
+                            android:gravity="center"
+                            android:text="可预约"
+                            android:textColor="@color/white"
+                            android:textSize="11sp"
+                            android:paddingRight="4dp"
+                            android:paddingLeft="4dp"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_clock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_green"
+                            android:text="09:00-21:00"
+                            android:textColor="@color/green"
+                            android:textSize="11sp"
+                            android:paddingRight="4dp"
+                            android:paddingLeft="4dp"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_fare_stop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/shape_gray_parker"
+                            android:text="停车费10元/小时"
+                            android:textColor="@color/list_gray"
+                            android:textSize="11sp"
+                            android:paddingRight="4dp"
+                            android:paddingLeft="4dp"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        style="@style/text14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/l1"
+                        android:layout_alignLeft="@id/tv_name"
+                        android:layout_marginTop="9dp"
+                        android:drawableLeft="@mipmap/station_icon_phone"
+                        android:drawablePadding="5dp"
+                        android:text="15209603592"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_paidui"
+                        style="@style/text14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_phone"
+                        android:layout_alignLeft="@id/tv_phone"
+                        android:layout_marginTop="9dp"
+                        android:text="排队人数：0"
+                        android:textColor="@color/text_color" />
+
+                    <TextView
+                        android:id="@+id/tv_kucun"
+                        style="@style/text14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_phone"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_toRightOf="@+id/tv_paidui"
+                        android:text="电池库存：有"
+                        android:textColor="@color/text_color" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/tv_paidui"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/divider_line" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/tv_distance"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@mipmap/station_record_guide"
+                        android:gravity="center"
+                        android:text="导航\n 4.00km"
+                        android:textColor="@color/text_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_yue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/shape_textcolor_17"
+                        android:gravity="center"
+                        android:paddingLeft="11dp"
+                        android:paddingTop="7dp"
+                        android:paddingRight="11dp"
+                        android:paddingBottom="7dp"
+                        android:text="立即预约"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/text14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/re"
+                android:layout_marginTop="2dp"
+                android:text="创业园内"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <data></data>
+</layout>
